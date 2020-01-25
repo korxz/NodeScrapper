@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#info-section {
+    margin-bottom: 10px;
+}
+
+section div.info-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section div.info-flex-container div.info-display-block {
+    padding: 10px;
+    width: fit-content;
+    font-size: 25px;
+    background-color: cadetblue;
+}
+
+section div.info-flex-container div.info-display-block p{
+    font-weight: 600;
+}
+
+section div.info-flex-container div.info-display-block:nth-child(1) {
+    margin-right: 10px;
+}
+
+
+.appartment-container {
+    padding: 15px;
+    background-color: bisque;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

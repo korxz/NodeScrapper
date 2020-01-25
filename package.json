@@ -1,0 +1,21 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "Scrapper for nepremicnine.net",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "korxz",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "8.11.1"
+  }
+}
