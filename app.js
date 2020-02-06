@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 app.use(cors());
 
-app.get('/', (req, res) =>  {
+app.get('/api/appartments', (req, res) =>  {
     let arr = []
     
     axios.get('https://www.nepremicnine.net/oglasi-oddaja/ljubljana-mesto/ljubljana-vic-rudnik/stanovanje/cena-od-450-do-570-eur-na-mesec/')
@@ -32,5 +32,9 @@ app.get('/', (req, res) =>  {
             console.warn(error)
         })
 })
+
+app.get('/api/test', (req, res) => {
+    res.send('Test');
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
