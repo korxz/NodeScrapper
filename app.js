@@ -6,6 +6,8 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.use(cors());
+app.use(express.static(__dirname+'/public'));
+app.set('view engine', 'ejs');
 
 app.get('/api/appartments', (req, res) =>  {
     let arr = []
@@ -33,8 +35,8 @@ app.get('/api/appartments', (req, res) =>  {
         })
 })
 
-app.get('/api/test', (req, res) => {
-    res.send('Test');
-});
+app.get('/', (req, res) => {
+    res.render('appartments');
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

@@ -1,7 +1,7 @@
 let priceBlock = document.getElementById('price-blocks');
 let infoSection = document.getElementById('info-section');
 
-fetch('https://salty-cliffs-86073.herokuapp.com/api/appartments', {
+fetch('/api/appartments', { 
     method: 'GET'
     })
     .then((response) => {
